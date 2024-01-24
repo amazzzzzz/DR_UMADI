@@ -1,0 +1,51 @@
+/* styles.css */
+
+body {
+    background-color: #FFC0AF;
+    color: #7E7F81;
+}
+
+.container {
+    background-color: #533D90;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #FD693F;
+}
+
+.form-label {
+    color: #FD693F;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.btn-primary {
+    background-color: #FD693F;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #533D90;
+}
+
+h2{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+  }
+
+.navbar-expand-lg .bg-body-tertiary { 
+    background-color: #F48B7F; 
+}
+
+
+
+

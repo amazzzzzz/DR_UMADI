@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/appointment.css">
+    <link rel="icon" href="Images/Favicon Background Removed.png" type="image/x-icon">
+
+</head>
+<body>
+
+<!--Nav-bar with a link starts-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/purple.png" height="50px" alt="Your Logo">
+            </a>
+        </div>
+    </nav>
+<!--Nav-bar with a link ends-->
+
+<!-- Appointment form starts -->
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Book Your Appointment</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" id="age" name="age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="4"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+
+            <div class="mb-3">
+                <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
+                <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="appointmentTime" class="form-label">Preferred Appointment Time</label>
+                <input type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="clinicSelection" class="form-label">Select Hospital</label>
+                <select class="form-select" id="clinicSelection" name="clinicSelection" required>
+                    <option value="" disabled selected>Select Hospital</option>
+                    <option value="clinic1">Shree Daneshwari Maternity & General Hospital</option>
+                    <option value="clinic2">Dr. Umadi's Womens Health And Wellness Clinic</option>
+                </select>
+            </div>
+
+           <button type="submit" class="btn btn-primary">Submit Appointment Request</button>
+        </form>
+    </div>
+<!-- Appointment form ends -->
+
+<!-- Footer starts -->
+<footer class="bg-light py-3">
+    <div class="text-center">
+        <p class="text-muted mb-0">&copy; 2024 Dr. Umadi. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Footer ends -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
